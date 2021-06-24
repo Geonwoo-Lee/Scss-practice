@@ -1,0 +1,31 @@
+
+$bg-color: rgb(0, 174, 255);
+
+body{
+    background-color: #ddd;
+}
+
+#box1 {
+    background-color: $bg-color;
+    color: #ff0;
+    width: 100px;
+}
+#box2 {
+    background-color: $bg-color;
+    color: #f00;
+    width: 100px;
+}
+#box3 {
+    background-color: $bg-color;
+    color: #ff0;
+    width: 300px;
+}
+#box4 {
+    background-color: $bg-color;
+    color: #f00;
+    width: 300px;
+}
+#box5 {
+    background-color: $bg-color;
+    color: #0f0;
+}

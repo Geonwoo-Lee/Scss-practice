@@ -1,0 +1,9 @@
+@mixin fontSizeBgColor($fontSize: 20px, $bgColor: #fff) {
+    font-size: $fontSize;
+    background-color: $bgColor;
+  } //영문으로 시작 숫자 언더바 가능
+  
+  @mixin linkStyle($color: #fff, $textDecoration: none) {
+    color: $color;
+    text-decoration: $textDecoration;
+  }

@@ -1,0 +1,67 @@
+//partial
+@import "mixin";
+@import "partial/styles";
+//Nesting
+
+//mixin
+
+
+
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 20px;
+  background-color: #fff4ef;
+}
+
+div {
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+#box1 {
+  @include fontSizeBgColor(40px, #ffcccc);
+  &:hover {
+    background-color: #ccc;
+    @media screen and (max-width: 500px) {
+      background-color: #999;
+    }
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 900px) {
+    font-size: 24px;
+  }
+
+  @extend %boxShape;
+
+  & > a {
+    @include linkStyle(#a22);
+
+    &:hover {
+      @include linkStyle(#000, underline);
+    }
+  }
+}
+
+#box1 #box2 {
+  @include fontSizeBgColor(20px, #e9e9e9);
+
+  @extend %boxShape;
+
+  & > a {
+    color: #ee6633;
+    text-decoration: none;
+    &:hover {
+      color: #a22;
+      text-decoration: underline;
+    }
+  }
+}
